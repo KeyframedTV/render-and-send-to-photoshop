@@ -1,6 +1,6 @@
 # Render As Gif.jsx
 
-This simple After Effects script was written for the article [Easing the gif creation process part 2: ExtendScript](http://keyframed.tv/easing-gif-creation-process-part-1-gifrocket/). 
+This simple After Effects script was written for the article [Easing the gif creation process part 2: ExtendScript](http://keyframed.tv/easing-gif-creation-process-part-2-extendscript/). 
 
 The script will do the following things:
 
