@@ -1,4 +1,4 @@
-# Render As Gif.jsx
+# Render and Send to Photoshop.jsx
 
 This simple After Effects script was written for the article [Easing the gif creation process part 2: ExtendScript](http://keyframed.tv/easing-gif-creation-process-part-2-extendscript/). 
 
