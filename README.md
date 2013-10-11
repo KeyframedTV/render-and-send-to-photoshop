@@ -11,6 +11,6 @@ The script will do the following things:
 
 ## Installation
 
-Copy `Render as gif.jsx` in your After Effects scripts folder.
-- Windows: Program Files\Adobe\Adobe After Effects <version>\Support Files\Scripts
-- OS X: /Applications/Adobe After Effects <version>/Scripts
+Copy `Render and Send to Photoshop.jsx` in your After Effects scripts folder.
+- Windows: `Program Files\Adobe\Adobe After Effects <version>\Support Files\Scripts`
+- OS X: `/Applications/Adobe After Effects <version>/Scripts`
