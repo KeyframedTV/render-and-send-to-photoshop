@@ -1,25 +1,25 @@
 `#target "aftereffects"`
 
 class Aegif
-  
+
   render: () ->
-    if app.project.activeItem
-    
-      # Storing active item
-      outputFile = app.project.renderQueue.items.add app.project.activeItem
-      
-      # Start render queue
-      app.project.renderQueue.render()
-    
-      # Open Photoshop
-      @openInPhotoshop outputFile
-    
-    else
-      alert "You need an active composition."
+    outputFiles = []
 
+    for i in [1..app.project.renderQueue.numItems]
+      if app.project.renderQueue.items[i].status is RQItemStatus.QUEUED
 
-  openInPhotoshop: (outputFile) ->
-    photoshop.open new File outputFile.outputModule(1).file
+        # Storing item
+        outputFiles.push app.project.renderQueue.items[i]
+
+    # Start render queue
+    app.project.renderQueue.render()
+
+    # Open Photoshop
+    @openInPhotoshop outputFiles
+
+  openInPhotoshop: (outputFiles) ->
+    for outputFile in outputFiles
+      photoshop.open new File outputFile.outputModule(1).file
 
 aegif = new Aegif()
 
